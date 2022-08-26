@@ -1,0 +1,96 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 100%;
+    height: 4rem;
+    padding: 2rem;
+  }
+  
+  .header svg {
+      color: brown;
+      cursor: pointer;
+  }
+  
+  .title {
+      font-size: 2.0rem;
+      line-height: 1.2rem;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+  
+  .movie-detail {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+  }
+  
+  .poster img {
+    height: 40rem;
+    width: 25rem;
+  }
+  
+  span:not(:first-child) {
+      margin: 1rem 0;
+  }
+  
+  .movie-detail span {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+  }
+  
+  .movie-detail strong {
+      display: block;
+      font-size: 1.3rem;
+      line-height: 1.9rem;
+  }
+  .movie-card {
+      margin-bottom: 30px;
+  }
+  .movie-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0 solid transparent;
+      border-radius: 0;
+  }
+  
+  .star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0.5rem 0;
+  
+    width: 4rem;
+    height: 3rem;
+  
+    border-radius: 8px;
+    background-color: #000;
+  
+  }
+  
+  .star span {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      color: #ffa710;
+  }
+  
+  svg {
+       color: #ffa710;
+  }

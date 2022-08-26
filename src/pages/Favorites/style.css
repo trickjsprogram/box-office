@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 100%;
+    height: 4rem;
+    padding: 2rem;
+  }
+  
+  .header svg {
+      color: brown;
+      cursor: pointer;
+  }
+
+  .msg {
+    margin-top: "100px";
+  }
+
+  .title {
+    font-size: 2.0rem;
+    line-height: 1.2rem;
+}

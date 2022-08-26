@@ -1,0 +1,116 @@
+img{
+    height:350px;
+    width:100%;
+    border-radius: 8px;
+  }
+  
+  div [className^="col-"]{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .card{
+    transition:0.5s;
+    cursor:pointer;
+    margin: 10px;
+  }
+
+  .icon-fav {
+    position: absolute;
+    top: 0.5rem;
+    left: 16.5rem;
+    right: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 8px;
+    background-color: #000;
+    backdrop-filter: blur(80px);
+    cursor: pointer;
+  }
+
+  svg {
+    color: #ffa710;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  @media only screen and (max-width: 360px ) {
+    .icon-fav {
+        left: 4.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 450px ) {
+    .icon-fav {
+        left: 18.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 451px) and (max-width: 570px) {
+    .icon-fav {
+        left: 19.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 571px) and (max-width: 765px) {
+    .icon-fav {
+        left: 9.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 766px) and (max-width: 990px) {
+    .icon-fav {
+        left: 8.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 991px) and (max-width: 1200px) {
+    .icon-fav {
+        left: 12.5rem;
+    }
+  }
